@@ -298,6 +298,7 @@ h3.clr3{
 }
 .company_details p, .skill_info p, .education_details p {
   font-size: 0.8em;
+  color: black;
 }
 .cmpny1 {
   padding-bottom: 1.5em;
