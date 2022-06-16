@@ -1,308 +1,76 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+<!DOCTYPE html>
+<!--
+Copyright 2016 Mozilla Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 -->
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset = "utf-8">
-<title>CV của Trần Quang Hiệp</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
- <link href="css/dashboard.css" rel="stylesheet">
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- Google Analytics -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <title>PDF.js viewer</title>
 
-  ga('create', 'UA-88795580-1', 'auto');
-  ga('send', 'pageview');
+    <link rel="stylesheet" href="./pdfjs-dist/web/pdf_viewer.css">
+    <link rel="stylesheet" type="text/css" href="viewer.css">
 
-</script>
+    <script src="./pdfjs-dist/build/pdf.js"></script>
+    <script src="./pdfjs-dist/web/pdf_viewer.js"></script>
+  </head>
 
-<!-- Custom Theme files -->
-<!--//theme-style-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="hiepxanh, xanhtool, tran quang hiep, Trần Quang Hiệp, lập trình angular 2, angular 2" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-<!-- start menu -->
+  <body>
+    <header>
+      <h1 id="title"></h1>
+    </header>
 
-</head>
-<body>
-<!-- header -->
-<div class="col-sm-3 col-md-3 sidebar">
-		 <div class="sidebar_top">
-			 <h1>TRẦN QUANG HIỆP</h1>
-			 <img  src="images/avatar.jpg" alt=""/>
-		 </div>
-		<div class="details">
-			
-			 <h3>WEBSITE</h3>
-			 <p>
-				<a href="https://github.com/hiepxanh">Github profile: https://github.com/hiepxanh</a> <br>
-				 <a href="https://awread.vn">Creator of https://awread.vn</a> <br>
-				 <a href="https://bookable.ca">Creator of https://bookable.ca</a>
-			</p>
-			<h3>PHONE</h3>
-			<p>+84-975-6262-96</p>
-			<h3>EMAIL</h3>
-			<p><a href="mailto@example.com">hiepxanh@gmail.com</a></p>
-			 <address>
-			 <h3>ADDRESS</h3>
-			 <span>5, 25, 445</span>
-			 <span>Nguyen Khang street</span>
-			 <span>Cau Giay District</span>
-			 </address>
+    <div id="viewerContainer">
+      <div id="viewer" class="pdfViewer"></div>
+    </div>
 
-		</div>
-		<div class="clearfix"></div>
-</div>
-<!---->
-<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
-<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-	<!---//pop-up-box---->
-<div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 main">
-	 <div class="content">
-		 <!-- <div class="details_header">
-			 <ul>
-				 <li><a href="index.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Resume</a></li>
-				 <li><a href="#"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>Print CV</a></li>
-				 <li><a href="contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email me</a></li>
-				 <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>View photo</a></li>
-				 <div id="small-dialog" class="mfp-hide">
-					 <img src="images/g4.jpg" alt=""/>
-				 </div>
-				 <script>
-						$(document).ready(function() {
-						$('.popup-with-zoom-anim').magnificPopup({
-							type: 'inline',
-							fixedContentPos: false,
-							fixedBgPos: true,
-							overflowY: 'auto',
-							closeBtnInside: true,
-							preloader: false,
-							midClick: true,
-							removalDelay: 300,
-							mainClass: 'my-mfp-zoom-in'
-						});
+    <div id="loadingBar">
+      <div class="progress"></div>
+      <div class="glimmer"></div>
+    </div>
 
-						});
-				</script>
-			 </ul>
-		 </div> -->
-		 <div class="company">
-			 <h3 class="clr1">Previous Employment</h3>
-			 <div class="company_details">
-				<h4>DEVELOPER <span>January 2018 - now</span></h4>
-				<h6>MOBILE + WEBAPP</h6>
-				<p>
-					I'm developer in Haravan company. I'm developing mobile app with Ionic 3 (Ionic 4 now). Angularjs as plugin for Haravan. And angular 6 for new web app.
-				</p>
-			</div>
-			 <div class="company_details">
-				<h4>SELF-STUDY <span>September 2016 - January 2018</span></h4>
-				<h6>Study to improve skill</h6>
-				<p>
-					Self improve angular 2 skill.
-				</p>
-			</div>
-			<div class="company_details">
-				<h4>TEACHER <span>July 2016 - September 2016</span></h4>
-				<h6>Techkids Coding School</h6>
-				<p>
-					After two courses, became a teacher by Mr. Nguyen Quang Huy Guide. taught C4E5 course.<br>
-				</p>
-			</div>
-			 <div class="company_details">
-				 <h4>COACH <span>March 2016 - June 2016</span></h4>
-				 <h6>Techkids Coding School</h6>
-				 <p class="cmpny1">One of student from Code For Every One (C4E) 2 course, learnt Python and became a coach for C4E class <br>
-			 		Coached for two more courses is: C4E3 and C4E4
-				</p>
-			 </div>
-
-		 </div>
-		 <div class="skills">
-			 <h3 class="clr2">Professional skills</h3>
-			 <div class="skill_info">
-			 <p>
-				 Can program with two languages, Python and JavaScript with favorite framework is Flask and Angular 2.
-         		 Also have few experience in Angular 1 too, but want to focus on new future framework.
-			 </p>
-			 </div>
-			 <div class="skill_list">
-				 <div class="skill1">
-					 <h4>JavaScript</h4>
-					 <ul>
-						<li>Angular: Rxjs, NGRX, Akita, Angularfire 2</li>
-						<li>Ionic 3+</li>
-					</ul>
-					<!-- <li>MongoDB: CRUD basic(Create, Remove, Update, Delete), paginate </li>
-					<li>Nginx: 2 domain to 1 web, 2 domain to 2 web </li> -->
-						<!-- <li>NodeJS: CRUD data, login, send Email API; Express</li>
-                        <li>MongoDB: CRUD basic(Create, Remove, Update, Delete), paginate </li>
-                        <li>Firebase: CRUD  </li>
-						<li>Nginx: 2 domain to 1 web, 2 domain to 2 web </li>
-          	            <li>Docker: basic </li>
-                        <li>Vagrant: basic  </li>
-					 </ul> -->
-				 </div>
-				 <div class="skill2">
-					 <h4>Python</h4>
-					 <ul>
-						<li>Craw data: Beautiful Soup 4</li>
-						<li>Flask: routing, serving file </li>
-						<li>Translate: basic</li>
-						<li>Convert to Excel</li>
-					 </ul>
-				 </div>
-         <div class="skill3">
-					 <h4>HTML/CSS</h4>
-					 <ul>
-						<li>Bootstrap, Materialize CSS framework</li>
-						<li>Design from mock design </li>
-           				 <li>Create and host static website </li>
-					 </ul>
-				 </div>
-				 <div class="clearfix"></div>
-			 </div>
-		 </div>
-		 <div class="education">
-			 <h3 class="clr3">Education</h3>
-			 <div class="education_details">
-				 <h4>National Economics University<span>AUGUST 2013 - 2017</span></h4>
-				 <h6>Bachelor of Law (Economic Law)</h6>
-			 </div>
-       <div class="education_details">
-        <h4>Techkids - Coding School<span>DECEMBER 2015 - MARCH 2016</span></h4>
-        <h6>Code For Every One Gen 2</h6>
+    <div id="errorWrapper" hidden="true">
+      <div id="errorMessageLeft">
+        <span id="errorMessage"></span>
+        <button id="errorShowMore">
+          More Information
+        </button>
+        <button id="errorShowLess">
+          Less Information
+        </button>
       </div>
-      <div class="education_details">
-       <h4>Techkids - Coding School<span>APRIL 2016 - AUGUST 2016</span></h4>
-       <h6> Fullstack Web Developer Gen 1</h6>
-     </div>
-			 <div class="education_details">
-				 <h4> Completed Courses <span> 2016 -  now </span></h4>
-				 <h6>Click the course link to course page</h6>
-				 <p><a href="https://school.scotch.io/routing-angular-2-applications">Routing Angular 2 Applications</a></p>
- 				 <p><a href="https://school.scotch.io/getting-started-with-angular-2">Getting Started with Angular 2</a></p>
-         <p><a href="https://school.scotch.io/create-a-beautiful-htmlcss-website">Create a Beautiful HTML/CSS Website</a></p>
-         <p><a href="https://school.scotch.io/creating-css-transitions">Creating CSS Transitions</a></p>
-         <p><a href="https://school.scotch.io/write-html-super-fast-with-emmet">Write HTML Super Fast with Emmet</a></p>
-          <p><a href="https://www.pluralsight.com/courses/play-by-play-angular-typescript-john-papa-christopher-martin">Play by Play: Angular with Typescript with John Papa and Christopher Martin</a></p>
-           <p><a href="https://www.udemy.com/learn-angular-2-development-by-building-10-apps/learn/v4/">Learn Angular 2 Development By Building 10 apps</a></p>
-           <p><a href="https://www.codeschool.com/courses/accelerating-through-angular-2">Accelerating Through Angular 2</a></p>
-            <p><a href="https://www.codeschool.com/courses/javascript-road-trip-part-1">JavaScript Road Trip Part 1</a></p>
-             <p><a href="https://www.codeschool.com/courses/javascript-road-trip-part-2">JavaScript Road Trip Part 2</a></p>
-              <p><a href="https://www.codeschool.com/courses/javascript-road-trip-part-3">JavaScript Road Trip Part 3</a></p>
-			 </div>
-       <div class="education_details">
-        <h4>BOOK</h4>
-
-          <img width="304" height="236" class="img-thumbnail" src="https://s3.amazonaws.com/titlepages.leanpub.com/mean-machine/hero?1473270271" alt="mean-machine">
-          <p class="cmpny1">
-          <a href="https://leanpub.com/mean-machine"> Mean-Machine </a></p>
+      <div id="errorMessageRight">
+        <button id="errorClose">
+          Close
+        </button>
       </div>
+      <div class="clearBoth"></div>
+      <textarea id="errorMoreInfo" hidden="true" readonly="readonly"></textarea>
+    </div>
 
-		 </div>
+    <footer>
+      <button class="toolbarButton pageUp" title="Previous Page" id="previous"></button>
+      <button class="toolbarButton pageDown" title="Next Page" id="next"></button>
 
-    <div class="education">
-		<h3 class="clr3">Belive me, the bestway to know my level is seeing my project</h3>
-		<div class="education_details">
-			<span>Date: 6/2017 -- 12/2017</span>
-			<h4>Angular 4: CMS system for a website <span><a href="https://apt-port-161714.firebaseapp.com/login">link here</a></span></h4>
-			<h6>Made by angular. Code by me 100%.</h6>
-			<p>status: Production Version</p>
-			<p>product: <a href="https://camthuong.com">https://camthuong.com</a> <a href="https://quyenanhkt.com">https://quyenanhkt.com</a> </p>
-		</div>
+      <input type="number" id="pageNumber" class="toolbarField pageNumber" value="1" size="4" min="1">
 
-		<div class="education_details">
-			<span>Date: 7/2017 -- 9/2017</span>
-			<h4>Angular 2: Project auto upload fanpage post from google drive <span><a href="https://quyen-anh-project.firebaseapp.com/">link here</a></span></h4>
-			<h6>Made by angular. Code by me 100%.</h6>
-         	<p>status: finished</p>
-		</div>
-		
-		<div class="education_details">
-			<span>Date: 12/2017 -- 02/2018</span>
-			<h4>Ionic 3: Quest Note <span><a href="https://play.google.com/store/apps/details?id=com.xanhtool.questnote">link here</a></span></h4>
-			<h6>Made by Ionic. Code by me 100%. It is note app.</h6>
-			<p>status: finished and go production</p>
-		</div>
+      <button class="toolbarButton zoomOut" title="Zoom Out" id="zoomOut"></button>
+      <button class="toolbarButton zoomIn" title="Zoom In" id="zoomIn"></button>
+    </footer>
 
-       <div class="education_details">
-			<span>Date: 01/2018 -- 03/2018</span>
-			<h4>Ionic 3: Cam Thuong story <span><a href="https://play.google.com/store/apps/details?id=com.xanhtool.truyenngancamthuong">link here</a></span> </h4>
-			<h6>Made by Ionic. Code by me 100%. It is reading story app.</h6>
-         	<p>status: finished and go production</p>
-		</div>
-  
-		<div class="education_details">
-			<span>Date: 02/2018 -- 04/2018</span>
-			<h4>Ionic 3: FaCook - Thực đơn cho mọi gia đình <span><a href="https://play.google.com/store/apps/details?id=com.facook.facook">link here</a></span> </h4>
-			<h6> Made by Ionic. Code by me 100%. Facook - food counseling.</h6>
-         	<p>status: finished and go production</p>
-		</div>
-		
-		<div class="education_details">
-			<span>Date: 02/2018 -- 05/2018</span>
-			<h4>NodeJS and Typescript: Automatic buying stuff bot <span><a href="https://drive.google.com/file/d/10gHJyno6yid6RagjPKe31_-hnCsiDqGG/view">link here</a></span> </h4>
-			<h6> Private project. Made by NodeJS and Typescript. Code by me 100%. Auto register/login to lazada or tiki to buy selected item.</h6>
-         	<p>status: finished and go production</p>
-		</div>
-
-               <div class="education_details">
-			<span>Date: 04/2018 -- 06/2018</span>
-			<h4>Ionic 3: DOGO THƯƠNG MẠI ĐIỆN TỬ NÔNG THÔN <span><a href="https://www.youtube.com/watch?v=sXTk4NUTFFo">link here</a></span> </h4>
-			<h6> Ionic Developer </p>
-		</div>
-
-		<div class="education_details">
-			<span>Date: 06/2018 -- 09/2018 </span>
-			<h4>AngularJS: Suplo App Theme <span><a href="https://www.youtube.com/watch?v=z3k2peZuN6g">link here</a></span> </h4>
-			<h6> Private Application.  Made by AngularJS. Code by me 70% almost logic code, 2 teamate support code layout html css. It is drop and drag module to create new landing page or article layout. </h6>
-         	<p>status: finished and go production.<a href="https://www.youtube.com/watch?v=z3k2peZuN6g"> Clip Demo 1 </a> 
-				 <a href="https://www.youtube.com/watch?v=Jx1gIcXahX4">Clip Demo 2</a>
-			</p>
-		</div>
-
-		<div class="education_details">
-			<span>Date: 08/2018 -- 08/2020 </span>
-			<h4>Angular 6: Bookable - Booking app for spa.<span><a href="https://www.facebook.com/bookable.ca/">link here</a></span> <span><a href="https://bookable.ca/">link here</a></span></h4>
-			<h6> Development Leader: structure project, select technology, handle business logic.</h6>
-         	<p>status: In Production</p>
-		</div>
-
-		<div class="education_details">
-			<span>Date: 08/2018 -- 08/2020 </span>
-			<h4>Ionic 4: Bookable - Booking app for spa.<span><a href="https://apps.apple.com/us/app/bookable/id1449448875">App Store</a></span> <span><a href="https://play.google.com/store/apps/details?id=ca.bookable.www">Play Store</a></span></h4>
-			<h6> Development Leader: structure project, select technology, handle business logic.</h6>
-         	<p>status: In Production</p>
-		</div>
-
-		<div class="education_details">
-			<span>Date: 08/2020 -- now </span>
-			<h4>Angular 14: Awread - A ecommere ebook platform<span><a href="https://awread.vn">Awread Website https://awread.vn</a></span></h4>
-			<h6>Owner: I create this project to help author selling there book</h6>
-         	<p>status: In Production</p>
-		</div>
-		
-      </div>
-	</div>
-
-</div>
-</div>
-<!---->
-</body>
+     <script src="viewer.js"></script>
+  </body>
 </html>
